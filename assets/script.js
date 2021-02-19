@@ -101,9 +101,10 @@ function showScore(){
     quizSection.style.display = "none";
     gameoverDiv.style.display = "flex";
     clearInterval(timerInterval);
-    highscoreInputName.value ="";
+    highscoreInputName.value = "";
     finalScoreEl.innerHTML = "You got " + score + " out of " + quizQuestions.length + "correct!";
 }
+
 // On click the highscore is displayed and goes to local storage//
 submitScoreBtn.addEventListener("click", function highscore(){
 
@@ -136,17 +137,17 @@ function generateHighScores(){
     var highscores = JSON.parse(localStorage.getItem("savedHighScores")) || [];
     for (i=0; i<highscores.length; i++){
         var newNameSpan = document.createElement("li");
-        var NewScoreSpan = document.createElement("li");
+        var newScoreSpan = document.createElement("li");
         newNameSpan.textContent = highscores[i].name;
-        NewScoreSpan.textContent = highscores[i].score;
+        newScoreSpan.textContent = highscores[i].score;
         highscoreDisplayName.appendChild(newNameSpan);
-        highscoreDisplayScore.appendChild(NewScoreSpan);
+        highscoreDisplayScore.appendChild(newScoreSpan);
     }
 }
 
 //function displays high scores page and hides other pages//
 function showHighScore(){
-    startQuizDiv.style.display = "none";
+    startQuizDiv.style.display = "none"
     gameoverDiv.style.display = "none";
     highScoreContainer.style.display = "flex";
     highscoreDiv.style.display = "block";
@@ -154,6 +155,7 @@ function showHighScore(){
 
     generateHighScores();
 }
+
 //this function clears local storage fo high scores and text from score board//
 function clearScore(){
     window.localStorage.clear();
@@ -161,6 +163,7 @@ function clearScore(){
     highscoreDisplayScore.textContent = "";
 
 }
+
 // the function sets all variables back to original values and shows home page to enable replay//
 function replayQuiz(){
     highScoreContainer.style.display = "none";
@@ -170,6 +173,7 @@ function replayQuiz(){
     score = 0;
     currentQuestionIndex = 0;
 }
+
 // function checks response to each answer//
 function checkAnswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer;
