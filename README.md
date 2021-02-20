@@ -9,6 +9,10 @@ URL of GitHub repository:
 
 
 Screenshot: 
+![screenshot quiz](C__Users_lheim_Desktop_homework_code-quiz_index.html (1).png)
+
+![screenshot quiz results](C__Users_lheim_Desktop_homework_code-quiz_index.html.png)
+
 
 
 
