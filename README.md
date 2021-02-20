@@ -2,11 +2,11 @@ The purpose of this application is to take a timed quiz on Coding fundamentals t
 
 
 URL of deployed application:
-
+https://rondah.github.io/code-quiz/
 
 
 URL of GitHub repository:
-
+https://github.com/RondaH/code-quiz/settings
 
 Screenshot: 
 ![screenshot quiz](C__Users_lheim_Desktop_homework_code-quiz_index.html (1).png)
