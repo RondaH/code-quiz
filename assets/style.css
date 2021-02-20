@@ -11,7 +11,7 @@ li{
 
 p{
     color: black;
-    text-shadow: .5px .5px wheat;
+    text-shadow: .5px .5px rgb(143, 96, 8);
     text-align: center;
     font-size: xx-large;
     font-family: sans-serif;
@@ -19,8 +19,18 @@ p{
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color:orangered;
+    color: black;
     font-style: italic;
+
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 50px;
+    text-align: center;
+    color: orangered;
+    font-style: italic;
+
 }
 input{
     text-align: center;
@@ -31,6 +41,7 @@ input{
     height: 100vh;
     display: flex;
     justify-content: center;
+    
 }
 
 button {
@@ -74,7 +85,8 @@ text-align: center;
 }
 #high-scorePage{
     display: none;
-    width: 50%;
+    justify-content: center;
+    width: 30rem;
     border: solid;
     border-color: darkgrey;
     border-bottom-style: groove;
@@ -84,12 +96,12 @@ text-align: center;
 }
 
 #highscore-header{
-    display: flex;
-    justify-content: space-around;
+    display: inline-block;
+    justify-content: space-evenly;
     border-bottom-style: outset;
     margin-bottom: .5rem;
     background-color: cornflowerblue;
-    color: cornsilk;
+    color: rgb(223, 186, 23);
     font-family: sans-serif;
 }
 #highScoreContainer {
@@ -110,6 +122,7 @@ text-align: center;
     padding-left: 9.5rem;
     font-family: sans-serif;
     font-weight: bold;
+    color: blue;
 }
 #highscore-score{
     float: right;
@@ -128,3 +141,18 @@ text-align: center;
 #endGameBtns {
     display: none;
 }
+
+@media (max-width: 690px) {
+    .btn {
+        font-size: 1rem;
+        margin: 16px 0px 0px;
+        padding: 10px 15px;
+    }
+
+@media (max-width: 500px){
+    .btn {
+        font-size: 0.8rem;
+    }
+}
+} 
+

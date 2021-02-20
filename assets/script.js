@@ -8,7 +8,7 @@ var quizTimer = document.getElementById("timer");
 var startQuizButton = document.getElementById("startbtn");
 var startQuizDiv = document.getElementById("startpage");
 var highScoreContainer = document.getElementById("highScoreContainer");
-var highscoreDiv = document.getElementById("high=scorePage");
+var highscoreDiv = document.getElementById("high-scorePage");
 var highscoreInputName = document.getElementById("initials");
 var highscoreDisplayName = document.getElementById("highscore-initials");
 var endGameBtns = document.getElementById("endGameBtns");
@@ -187,6 +187,7 @@ function checkAnswer(answer){
     }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
         alert("That is Incorrect.")
         currentQuestionIndex++;
+        timeLeft -=6;
         generateQuizQuestion();
         //display answer is wrong//
 
